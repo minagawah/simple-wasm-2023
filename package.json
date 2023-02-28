@@ -1,0 +1,46 @@
+{
+  "name": "very-simple-wasm-2023",
+  "version": "0.1.0",
+  "private": false,
+  "description": "A sample WASM app using wasm-pack-plugin",
+  "main": "dist/index.html",
+  "scripts": {
+    "clippy": "cd src && cargo clippy",
+    "prettier": "prettier --write \"*.{js,md,json}\" \"js/*.{css,html,js}\"",
+    "build": "rimraf dist pkg && NODE_ENV=production webpack",
+    "dev": "NODE_ENV=development webpack serve",
+    "test": "cargo test && wasm-pack test --headless --firefox"
+  },
+  "repository": "https://github.com/minagawah/very-simple-wasm-2023.git",
+  "keywords": [
+    "wasm-pack-plugin",
+    "web-sys",
+    "wasm-bindgen"
+  ],
+  "author": "minagawah <minag@tokyo800.jp>",
+  "license": "(Unlicense OR MIT)",
+  "bugs": {
+    "url": "https://github.com/minagawah/very-simple-wasm-2023/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/runtime-corejs3": "^7.21.0",
+    "@wasm-tool/wasm-pack-plugin": "^1.6.0",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "core-js": "^3.29.0",
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss-loader": "^7.0.2",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.1.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
