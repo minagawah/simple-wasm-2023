@@ -11,8 +11,14 @@ I have another project,
 which also uses `wasm-pack-plugin`. Although it is a bit complicated,
 it has practical examples, and probably has better explanations for program flows.
 
-Or, if you directly want to use `wasm-pack` instad of using `wasm-pack-plugin`,
-I have [perlin-experiment](https://github.com/minagawah/perlin-experiment)
+I have another simple WASM sample app, called
+[perlin-experiment-2](https://github.com/minagawah/perlin-experiment-2).
+It is a matter of preference, but you may find it simpler
+for the way of spawning a child process.
+
+Or, if you want to directly use `wasm-pack` instead of using `wasm-pack-plugin`,
+while it is a bit old, but I have
+[perlin-experiment](https://github.com/minagawah/perlin-experiment)
 which also has good examples using Rust's _traits_.
 
 Since we heavily depend on
